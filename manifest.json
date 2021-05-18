@@ -1,0 +1,14 @@
+{
+	"name": "Word Count",
+	"description": "Automatically open word count on google docs!",
+	"version": "1.0",
+	"manifest_version": 3,
+	"background": {
+		"service_worker": "background.js"
+	},
+	"permissions": ["storage", "tabs", "scripting", "notifications"],
+	"host_permissions": ["*://docs.google.com/*"],
+	"action": {
+		"default_popup": "popup.html"
+	}
+}
